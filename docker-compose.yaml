@@ -7,6 +7,7 @@ services:
       - DATABASE__PASSWORD=${MYSQL_PASSWORD}
       - GATEWAY__PRIVATE_TOKEN=${GATEWAY_PRIVATE_TOKEN}
       - HTTP__OPENAPI__ENABLED=${HTTP_OPENAPI_ENABLED}
+      - JWT__SECRET=${JWT_SECRET}
     configs:
       - source: config-yml
         target: /app/config.yml
